@@ -55,3 +55,10 @@ Resources:
 http://www.webmonkey.com/2010/02/get_started_with_tumblr/
 
 https://www.pivotaltracker.com/s/projects/1025208
+http://guides.rubyonrails.org/layouts_and_rendering.html
+http://line25.com/tutorials/how-to-create-a-pure-css-dropdown-menu
+
+***Design Choices
+Turbolinks vs Backbone
+Turbolinks allows for SEO without any further work
+Backbone will require http://www.seo4ajax.com/ or http://phantomjs.org/

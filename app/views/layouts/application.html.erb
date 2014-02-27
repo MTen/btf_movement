@@ -7,69 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 
-<div class="container">
-
-<header class="sixteen columns clearfix" id='image_header'>
-
-<!-- BTF movement logo -->
-  <div class="four columns alpha omega" id="btf_logo_header">
-    <a href="index.htm">
-      <img src="assets/BTFLogo.png" alt="BTF Movement"/>
-    </a>
-  </div>
-<!-- Invincible header image-->
-  <div class="nine columns alpha omega" id='invincible_header'> 
-    <img src="assets/invincible.png" width="100%">
-  </div>
-<!-- Follow and contact list -->
-  <div class="one-third aplha omega" id="contact_list_header">
-<!-- Facebook button -->
-    <ul>
-      <li>
-        <a href="https://www.facebook.com/BTFMovement">
-          <img src="assets/facebook25.png">
-        </a>
-        <a href="https://www.facebook.com/BTFMovement">STAY CONNECTED</a>
-      </li>
-    
-<!-- Facebook link -->
-<!-- Paypal donation button -->
-      <li>
-        <a href="donate.htm">
-          <img src="assets/paypal.png">
-        </a>
-<!-- Donation link -->
-        <a href="donate.htm">DONATE</a>
-      </li>
-<!-- Volunteer button -->
-      <li>
-        <a href="volunteer.php">
-          <img src="assets/volunteer.png"/>
-        </a>
-        <a href="volunteer.php">VOLUNTEER</a>
-      </li>
-    
-<!-- Calander icon -->
-      <li>
-        <a href="calendar.htm">
-          <img src="assets/calendar-icon.png" alt="Calendar" width="26" height="26" border="0" />
-        </a>
-<!-- Calander link -->
-        <a href="calendar.htm">UPCOMING EVENTS</a>
-      </li>
-    </ul>          
-</div>
-
-<div class="sixteen columns" id='nav_bar'>
-  
-</div>
-</header>
+<%= render "layouts/header" %>
+<%= render "layouts/navbar" %>
 
 <body>
+  <container>
+  
+    <%= yield %>
 
-  <%= yield %>
-
-</div>
-</container>
+  </container>
 </body>
 </html>
