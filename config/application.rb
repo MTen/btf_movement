@@ -26,13 +26,13 @@ module BtfRails
     # config.i18n.default_locale = :de
   config.generators do |g|
     g.test_framework :rspec,
-      fixtures: true,
-      view_specs: false,
-      helper_specs: false,
-      routing_specs: false,
-      controller_specs: true,
-      request_specs: false
-    g.fixture_replacement :factory_girl, dir: "spec/factories"
+      fixtures: true, # specifies to generate a fixture for each model (using a Factory Girl factory, instead of an actual fixture)
+      view_specs: false, # false says to skip generating view specs. I won’t cover them in this book; instead we’ll use feature specs to test interface elements.
+      helper_specs: false, # skips generating specs for the helper files Rails generates with each controller. As your comfort level with RSpec improves, consider changing this option to true and testing these files.
+      routing_specs: false, # false omits a spec file for your config/routes.rb file. If your applica- tion is simple, as the one in this book will be, you’re probably safe skipping these specs. As your application grows, however, and takes on more complex routing, it’s a good idea to incorporate routing specs.
+      controller_specs: true, 
+      request_specs: false # skips RSpec’s defaults for adding integration-level specs in spec/requests. We’ll cover this in chapter 8, at which time we’ll just create our own files.
+    g.fixture_replacement :factory_girl, dir: "spec/factories" # And finally, g.fixture_replacement :factory_girl tells Rails to generate factories instead of fixtures, and to save them in the spec/factories directory.
   end
 
   end
