@@ -45,7 +45,7 @@ Icebox
 
 Reasons for choosing this project:
 
-- Display that I can work with a design and delivery in code what a designer has provided with a templating program.
+- Demonstrate that I can work with a design and deliver in code what a designer has provided with a templating program like adobe.
 - Contribute to an nobel opensource project
 - Maintain an open source project and work with a community of developers.
 - Create a rails backend for working with a foriegn CMS portal which I can opensource for others to use.
@@ -57,8 +57,16 @@ http://www.webmonkey.com/2010/02/get_started_with_tumblr/
 https://www.pivotaltracker.com/s/projects/1025208
 http://guides.rubyonrails.org/layouts_and_rendering.html
 http://line25.com/tutorials/how-to-create-a-pure-css-dropdown-menu
+http://codepen.io/edwardloveall/pen/EcIkb
+http://github.hubspot.com/drop/overview/embedding_drop/
+http://railscasts.com/episodes/328-twitter-bootstrap-basics?view=asciicast
+http://getbootstrap.com/
+https://github.com/tumblr/tumblr_client
+API Docs: http://www.tumblr.com/docs/en/api/v2
+Gem docs: https://github.com/tumblr/tumblr_client
 
 ***Design Choices
 Turbolinks vs Backbone
 Turbolinks allows for SEO without any further work
-Backbone will require http://www.seo4ajax.com/ or http://phantomjs.org/
+Backbone will require http://www.seo4ajax.com/ or http://phantomjs.org/ but will offer a better learning experience, both optimizing a single page app and using backbone itself.
+

@@ -9,20 +9,32 @@ gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
+# Helping those who don't have frontend skillz.
+# Tutorial to implement: http://railscasts.com/episodes/328-twitter-bootstrap-basics?view=asciicast
+# Docs use http://getbootstrap.com/
+gem 'twitter-bootstrap-rails'
+
+#Simplifies using the tumlbr api
+# API Docs: http://www.tumblr.com/docs/en/api/v2
+# Gem docs: https://github.com/tumblr/tumblr_client
+gem 'tumblr_client'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
+# Added the rubyracer for twitter bootstrap
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+# Removed turbo links and using backbone instead.
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+# gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
@@ -57,6 +69,8 @@ group :test do
   gem "launchy", "~> 2.3.0"
   gem "selenium-webdriver", "~> 2.39.0"
 end
+
+
 
 # rspec-rails: includes RSpec itself in a wrapper to add some extra Rails-specific features.
 # factory_girl_rails: replaces Rails’ default fixtures for feeding test data to the test suite with much more preferable factories.
