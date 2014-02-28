@@ -12,8 +12,9 @@ gem 'sass-rails', '~> 4.0.0'
 # Helping those who don't have frontend skillz.
 # Tutorial to implement: http://railscasts.com/episodes/328-twitter-bootstrap-basics?view=asciicast
 # Docs use http://getbootstrap.com/
+# https://github.com/seyhunak/twitter-bootstrap-rails
 gem 'twitter-bootstrap-rails'
-
+gem "less-rails"
 #Simplifies using the tumlbr api
 # API Docs: http://www.tumblr.com/docs/en/api/v2
 # Gem docs: https://github.com/tumblr/tumblr_client
