@@ -37,4 +37,18 @@ describe TumblrPost do
 			tumblr_post_id: 12341234)
 			expect(post.title).to eq 'Title'
 	end
+
+# Not ready for this test - need to set up tag association.
+	it 'returns a sorted array of results that match the tag' do
+		# homepage = TumblrPost.create(
+		# 	title: 'Title',
+		# 	body: 'some body stuff',
+		# 	tumblr_post_id: 12341234,
+		# 	tags: ["homepage"])
+		# expect(TumblrPost.by_tag("homepage")).to eq [homepage]
+	end
+	it 'returns a sorted array that matches the tag when multiple tags are present'
+		
+	it 'ignores posts that do not have a matching tag'
+
 end

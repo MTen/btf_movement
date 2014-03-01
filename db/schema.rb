@@ -11,15 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140301073419) do
+ActiveRecord::Schema.define(version: 20140301203829) do
+
+  create_table "tags", force: true do |t|
+    t.string "tag"
+  end
 
   create_table "tumblr_posts", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "post_id"
     t.string   "title"
     t.text     "body"
     t.integer  "tumblr_post_id"
+  end
+
+  create_table "tumblr_posts_tags", force: true do |t|
+    t.integer "tags_id"
+    t.integer "tumblr_posts_id"
   end
 
 end

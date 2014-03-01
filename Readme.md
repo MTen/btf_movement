@@ -66,7 +66,10 @@ API Docs: http://www.tumblr.com/docs/en/api/v2
 Gem docs: https://github.com/tumblr/tumblr_client
 
 ***Design Choices
+
 Turbolinks vs Backbone
-Turbolinks allows for SEO without any further work
-Backbone will require http://www.seo4ajax.com/ or http://phantomjs.org/ but will offer a better learning experience, both optimizing a single page app and using backbone itself.
+	Turbolinks allows for SEO without any further work
+	>Backbone will require http://www.seo4ajax.com/ or http://phantomjs.org/ but will offer a better learning experience, both optimizing a single page app and using backbone itself.
+
+Used the has_and_belongs_to_many for tag & tumblr_posts incase user adds multiple tags, even if they are directed not to.
 
