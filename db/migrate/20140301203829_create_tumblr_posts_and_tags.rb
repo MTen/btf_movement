@@ -4,7 +4,7 @@ class CreateTumblrPostsAndTags < ActiveRecord::Migration
     	t.string :tag
     end
 
-    create_table :tumblr_posts_tags do |t|
+    create_table :tags_tumblr_posts do |t|
     	t.belongs_to :tags
     	t.belongs_to :tumblr_posts
     end

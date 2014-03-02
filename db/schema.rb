@@ -17,17 +17,17 @@ ActiveRecord::Schema.define(version: 20140301203829) do
     t.string "tag"
   end
 
+  create_table "tags_tumblr_posts", force: true do |t|
+    t.integer "tags_id"
+    t.integer "tumblr_posts_id"
+  end
+
   create_table "tumblr_posts", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "title"
     t.text     "body"
     t.integer  "tumblr_post_id"
-  end
-
-  create_table "tumblr_posts_tags", force: true do |t|
-    t.integer "tags_id"
-    t.integer "tumblr_posts_id"
   end
 
 end
