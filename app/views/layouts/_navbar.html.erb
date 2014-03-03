@@ -1,44 +1,45 @@
-          <div class="navbar navbar-fixed-top">
-            <div class="navbar-inner">
-              <div class="container">
-                <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </a>
-                <a class="brand" href="#">Home</a>
-                <div class="container nav-collapse">
-                  <ul class="nav">
-                    <li><%= link_to "GET INFORMED"%>
-                      <ul>
-                        <li><a href="#">Signs And Symptoms</a></li>
-                        <li><a href="#">Prevention In Your Area</a></li>
-                        <li><a href="#">Resources</a></li>
-                        <li><a href="#">Statistics</a></li>
-                      </ul>
-                    </li>
-                    <li><%= link_to "THE BTF MOVEMENT"%>
-                      <ul>
-                        <li> <a href="#">Reform Judicial System</a></li>
-                        <li> <a href="#">Reform Medical Insurance</a></li>
-                        <li> <a href="#">Long Term Recovery</a></li>
-                      </ul>
-                    </li>
-                    <li><%= link_to "HELP FIGHT ADDICTION"%>
-                      <ul>
-                        <li><a href="#">Calendar</a> </li>
-                        <li><a href="#">Volunteer</a>   </li>
-                        <li><a href="#">Donate</a>   </li>
-                      </ul>
-                    </li>
-                    <li><%= link_to "ABOUT US"%>
-                      <ul>
-                        <li><a href="#">Founders Story</a> </li>
-                        <li><a href="#">Contact Us</a>    </li>  
-                      </ul>
-                    </li> 
-                  </ul> <!--/.nav -->
-              </div><!--/.nav-collapse -->
-            </div><!--/.container -->
-          </div><!--/navbar-inner -->
-        </div><!--/navbar navbar-fixed-top -->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="/">Home</a>
+      <div class="container nav-collapse">
+        <ul class="nav navbar-nav">
+          <li><%= link_to "GET INFORMED"%>
+            <ul>
+              <li><%= link_to "Signs And Symptoms", "/signs_and_symptoms"%></a></li>
+              <li><%= link_to "Prevention In Your Area", "/prevention_in_your_area"%></a></li>
+              <li><%= link_to "Resources", "/resources"%></a></li>
+              <li><%= link_to "Statistics", "/statistics"%></a></li>
+            </ul>
+          </li>
+          <li><%= link_to "THE BTF MOVEMENT"%>
+            <ul>
+              <li> <a href="#">Reform Judicial System</a></li>
+              <li> <a href="#">Reform Medical Insurance</a></li>
+              <li> <a href="#">Long Term Recovery</a></li>
+            </ul>
+          </li>
+          <li><%= link_to "HELP FIGHT ADDICTION"%>
+            <ul>
+              <li><a href="#">Calendar</a></li>
+              <li><a href="#">Volunteer</a></li>
+              <li><a href="#">Donate</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT US<b class="caret"></b></a><li>
+            <ul class="dropdown-menu">
+              <li><a href="#">Founders Story</a></li>
+              <li><a href="#">Contact Us</a></li>  
+            </ul>
+          </li> 
+        </ul> <!--/.nav -->
+      </div><!--/.nav-collapse -->
+    </div><!--/.container -->
+  </div><!--/navbar-inner -->
+</div><!--/navbar navbar-fixed-top -->

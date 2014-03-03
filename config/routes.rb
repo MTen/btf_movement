@@ -2,55 +2,23 @@ BtfRails::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  # You can have the root of your site routed with "root"
+# Since this application is using Tumblr as the CMS this will not be using RESTful routing.
+# This application is also intentionally limited in routing capability to lower overall security 
+# vulnerabilities.
+
+
+# HOME
   root 'btf_movement#index'
-  resources :btf_movement
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+# GET INFORMED
+  get '/signs_and_symptoms' =>  'get_informed#signs_and_symptoms'
+  get '/prevention_in_your_area' =>  'get_informed#prevention_in_your_area'
+  get '/resources' => 'get_informed#resources'
+  get '/statistics' => 'get_informed#statistics'
 
-  # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
+# THE BTF MOVEMENT
 
-  # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
+# HELP FIGHT ADDICTION
 
-  # Example resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
+# ABOUT US
 
-  # Example resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
-
-  # Example resource route with more complex sub-resources:
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', on: :collection
-  #     end
-  #   end
-
-  # Example resource route with concerns:
-  #   concern :toggleable do
-  #     post 'toggle'
-  #   end
-  #   resources :posts, concerns: :toggleable
-  #   resources :photos, concerns: :toggleable
-
-  # Example resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
 end

@@ -1,11 +1,8 @@
-<div id="articles">
-  <div class="jumbotron" id='home_image'>
-    <img src="assets/home01.jpg">
-  </div>
-  <div id="articles">
-		<h1><%= (@posts["posts"][0]["title"]).html_safe %></h1>
-			<%= (@posts["posts"][0]["body"]).html_safe %>  
-  </div>
+<div class="jumbotron" id='home_image'>
+  <img src="assets/home01.jpg">
 </div>
 
-
+<div id="articles">
+	<h1><%= (@post["title"]).html_safe %></h1>
+			<%= (@post["body"]).html_safe %>  
+</div>
