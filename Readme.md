@@ -1,4 +1,8 @@
+
+Client does not know how to write HTML or Ruby and needs a static html website converted to a blogging platform. 
 Taking a static html website and putting it on rails. 
+
+
 
 Milestone 1 - MVP
 Take current static website and put it on rails - header, nav bar, side bar, content div. 
@@ -73,3 +77,6 @@ Turbolinks vs Backbone
 
 Used the has_and_belongs_to_many for tag & tumblr_posts incase user adds multiple tags, even if they are directed not to.
 
+API call
+Do I put the api call on a heroku job at "publishing times" or put in the view that whenever its hit it checks to see the last time the api was called and if it wasn't done int he last 10 minutes it checks tumblr
+or, since its a small site, just do the call every time

@@ -3,6 +3,9 @@
     <img src="assets/home01.jpg">
   </div>
   <div id="articles">
-    <p> This is where the blog stuff goes </p>
+		<h1><%= (@posts["posts"][0]["title"]).html_safe %></h1>
+			<%= (@posts["posts"][0]["body"]).html_safe %>  
   </div>
 </div>
+
+
