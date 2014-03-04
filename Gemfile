@@ -46,6 +46,12 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Adding this gem per https://stackoverflow.com/questions/15354539/heroku-does-not-compile-files-under-assets-pipelines-in-rails-4
+# Supposed to fix asset pipeline deployment on heroku
+group :production do
+  gem 'rails_12factor'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
