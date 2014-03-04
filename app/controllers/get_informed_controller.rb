@@ -20,5 +20,4 @@ end
 		@post = TumblrPost.statistics 
 	end
 
-
 end

@@ -7,24 +7,31 @@
   */
 
 
-  .navbar-inner {
-    background-color:#f57e20;
+  .nav, .nav-collapse, .navbar-inner, .nav-header {
+    background-color: #f57e20;
+    height:50px;
+    color:white;
+    
   }
   .nav li ul {
-  	display: none;
+    display: none;
   }
+
+  .navbar-nav a {
+    color:white;
+  }
+  
   .nav li:hover ul {
-  	display: block;
+    display: block;
+    background-color:#f57e20;
   }
   .nav li ul li {
-  	background-color: transparent;
-  	display:block;
-  	width: inherit;
+    background-color: transparent;
+    display:block;
+    width: inherit;
   }
   .nav li ul li:hover {
-  	background-color:#ccc;
   }
   .image_header{
     float:left;
   }
-}

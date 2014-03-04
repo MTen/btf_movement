@@ -4,8 +4,8 @@ has_and_belongs_to_many :tags
 	validates :body, presence: true
 	validates :tumblr_post_id, presence: true, uniqueness: true
 
+private
 ### Api call used for "low security" activities. 
-
 	def self.api_call
 	#Authenticate Client
 		Tumblr::Client.new({:consumer_key => ENV['TUMBLR_CONSUMER_KEY']})
@@ -44,7 +44,8 @@ has_and_belongs_to_many :tags
 		homepage["posts"][0]
 	end
 
-### Using OAuth call to get the private signs and symptoms post.
+### Using OAuth call to get private posts.
+#Get Informed
 	def self.signs_and_symptoms
 		signs_and_symptoms = oauth_call.posts 'btf-movement.tumblr.com', :type => 'text', :id => 78395809305
 		signs_and_symptoms["posts"][0]
@@ -65,5 +66,46 @@ has_and_belongs_to_many :tags
 		statistics["posts"][0]
 	end
 
+#The BTF Movement
+	def self.judicial_system
+		judicial = oauth_call.posts 'btf-movement.tumblr.com', :type => 'text', :id => 78466500774
+		judicial["posts"][0]
+	end
+
+	def self.medical_insurance
+		medical = oauth_call.posts 'btf-movement.tumblr.com', :type => 'text', :id => 78466727685
+		medical["posts"][0]
+	end
+
+	def self.long_term_recovery
+		recovery = oauth_call.posts 'btf-movement.tumblr.com', :type => 'text', :id => 78468391088
+		recovery["posts"][0]
+	end
+
+#Help Fight Addiction
+	def self.calendar
+
+	end
+
+	def self.volunteer
+		volunteer = oauth_call.posts 'btf-movement.tumblr.com', :type => 'text', :id => 78470872081
+		volunteer["posts"][0]
+	end
+
+	def self.donate
+		donate = oauth_call.posts 'btf-movement.tumblr.com', :type => 'text', :id => 78471192724
+		donate["posts"][0]
+	end
+
+#About Us
+	def self.founders_story
+		founders_story = oauth_call.posts 'btf-movement.tumblr.com', :type => 'text', :id => 78502562482
+		founders_story["posts"][0]
+	end
+
+	def self.contact
+		contact = oauth_call.posts 'btf-movement.tumblr.com', :type => 'text', :id => 78502699891
+		contact["posts"][0]
+	end
 
 end

@@ -11,31 +11,30 @@
         <ul class="nav navbar-nav">
           <li><%= link_to "GET INFORMED"%>
             <ul>
-              <li><%= link_to "Signs And Symptoms", "/signs_and_symptoms"%></a></li>
-              <li><%= link_to "Prevention In Your Area", "/prevention_in_your_area"%></a></li>
-              <li><%= link_to "Resources", "/resources"%></a></li>
-              <li><%= link_to "Statistics", "/statistics"%></a></li>
+              <li><%= link_to "Signs And Symptoms", "/signs_and_symptoms"%></li>
+              <li><%= link_to "Prevention In Your Area", "/prevention_in_your_area"%></li>
+              <li><%= link_to "Resources", "/resources"%></li>
+              <li><%= link_to "Statistics", "/statistics"%></li>
             </ul>
           </li>
           <li><%= link_to "THE BTF MOVEMENT"%>
             <ul>
-              <li> <a href="#">Reform Judicial System</a></li>
-              <li> <a href="#">Reform Medical Insurance</a></li>
-              <li> <a href="#">Long Term Recovery</a></li>
+              <li> <%= link_to "Reform Judicial System", '/judicial_system' %>
+              <li> <%= link_to "Reform Medical Insurance", '/medical_insurance' %>
+              <li> <%= link_to "Long Term Recovery", '/long_term_recovery' %>
             </ul>
           </li>
           <li><%= link_to "HELP FIGHT ADDICTION"%>
             <ul>
-              <li><a href="#">Calendar</a></li>
-              <li><a href="#">Volunteer</a></li>
-              <li><a href="#">Donate</a></li>
+              <li><%= link_to "Calendar",'/calendar'%></li>
+              <li><%= link_to "Volunteer",'/volunteer'%></li>
+              <li><%= link_to "Donate",'/donate'%></li>
             </ul>
           </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT US<b class="caret"></b></a><li>
-            <ul class="dropdown-menu">
-              <li><a href="#">Founders Story</a></li>
-              <li><a href="#">Contact Us</a></li>  
+          <li><%= link_to "ABOUT US"%>
+            <ul>
+              <li><%= link_to "Founders Story ",'/founders_story'%></li>
+              <li><%= link_to "Contact Us",'/contact'%></li>
             </ul>
           </li> 
         </ul> <!--/.nav -->
