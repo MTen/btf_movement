@@ -1,47 +1,47 @@
 
-# development:
-#   adapter: postgresql
-#   encoding: unicode
-#   database: btf_rails_development
-#   pool: 5
-#   username: MTen
-#   password:
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: btf_rails_development
+  pool: 5
+  username: MTen
+  password:
   
-# test:
-#   adapter: postgresql
-#   encoding: unicode
-#   database: btf_rails_test
-#   pool: 5
-#   username: MTen
-#   password:
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: btf_rails_test
+  pool: 5
+  username: MTen
+  password:
 
-# production:
-#   adapter: postgresql
-#   encoding: unicode
-#   database: btf_rails_production
-#   pool: 5
-#   username: MTen
-#   password:
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: btf_rails_production
+  pool: 5
+  username: MTen
+  password:
 
 # SQLite version 3.x
 # Laptop is having RAM issues and may need to go in for service.
 # Switching over to an ubuntu dev environment where SQLite is already
 # set up for time's sake.
 
-development:
-  adapter: sqlite3
-  database: db/development.sqlite3
-  pool: 5
-  timeout: 5000
+# development:
+#   adapter: sqlite3
+#   database: db/development.sqlite3
+#   pool: 5
+#   timeout: 5000
 
-test:
-  adapter: sqlite3
-  database: db/test.sqlite3
-  pool: 5
-  timeout: 5000
+# test:
+#   adapter: sqlite3
+#   database: db/test.sqlite3
+#   pool: 5
+#   timeout: 5000
 
-production:
-  adapter: sqlite3
-  database: db/production.sqlite3
-  pool: 5
-  timeout: 5000
+# production:
+#   adapter: sqlite3
+#   database: db/production.sqlite3
+#   pool: 5
+#   timeout: 5000
