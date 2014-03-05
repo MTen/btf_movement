@@ -4,8 +4,6 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 
 # Use postgresql as the database for Active Record
-gem 'pg'
-#gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -36,7 +34,8 @@ gem 'jquery-rails'
 
 # Removed turbo links and using backbone instead.
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-# gem 'turbolinks'
+gem 'turbolinks'
+gem 'jquery-turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
@@ -50,6 +49,7 @@ end
 # Supposed to fix asset pipeline deployment on heroku
 group :production do
   gem 'rails_12factor'
+  gem 'pg'
 end
 
 # Use ActiveModel has_secure_password
@@ -68,6 +68,7 @@ end
 group :development, :test do
   gem "rspec-rails", "~> 2.14.0"
   gem "factory_girl_rails", "~> 4.2.1"
+  gem 'sqlite3'
 end
 
 group :test do

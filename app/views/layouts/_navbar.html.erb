@@ -1,44 +1,35 @@
-<div class="navbar">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
-      <a class="brand" href="/">Home</a>
-      <div class="container nav-collapse">
-        <ul class="nav navbar-nav">
-          <li><%= link_to "GET INFORMED"%>
-            <ul>
-              <li><%= link_to "Signs And Symptoms", "/signs_and_symptoms"%></li>
-              <li><%= link_to "Prevention In Your Area", "/prevention_in_your_area"%></li>
-              <li><%= link_to "Resources", "/resources"%></li>
-              <li><%= link_to "Statistics", "/statistics"%></li>
-            </ul>
-          </li>
-          <li><%= link_to "THE BTF MOVEMENT"%>
-            <ul>
-              <li> <%= link_to "Reform Judicial System", '/judicial_system' %>
-              <li> <%= link_to "Reform Medical Insurance", '/medical_insurance' %>
-              <li> <%= link_to "Long Term Recovery", '/long_term_recovery' %>
-            </ul>
-          </li>
-          <li><%= link_to "HELP FIGHT ADDICTION"%>
-            <ul>
-              <li><%= link_to "Calendar",'/calendar'%></li>
-              <li><%= link_to "Volunteer",'/volunteer'%></li>
-              <li><%= link_to "Donate",'/donate'%></li>
-            </ul>
-          </li>
-          <li><%= link_to "ABOUT US"%>
-            <ul>
-              <li><%= link_to "Founders Story ",'/founders_story'%></li>
-              <li><%= link_to "Contact Us",'/contact'%></li>
-            </ul>
-          </li> 
-        </ul> <!--/.nav -->
-      </div><!--/.nav-collapse -->
-    </div><!--/.container -->
-  </div><!--/navbar-inner -->
-</div><!--/navbar navbar-fixed-top -->
+<nav>
+  <ul id="menu">
+  <div class='container'>
+    <li><a href="/">HOME</a></li>
+    <li><%= link_to "GET INFORMED"%>
+      <ul>
+        <li><%= link_to "Signs & Symptoms", "/signs_and_symptoms"%></li>
+        <li><%= link_to "Prevention", "/prevention_in_your_area"%></li>
+        <li><%= link_to "Resources", "/resources"%></li>
+        <li><%= link_to "Statistics", "/statistics"%></li>
+      </ul>
+    </li>
+    <li><%= link_to "THE BTF MOVEMENT"%>
+      <ul>
+        <li> <%= link_to "Judicial Reform", '/judicial_system' %> </li>
+        <li> <%= link_to "Medical Reform", '/medical_insurance' %> </li>
+        <li> <%= link_to "Long Term Recovery", '/long_term_recovery' %> </li>
+      </ul>
+    </li>
+    <li><%= link_to "HELP FIGHT ADDICTION"%>
+      <ul> 
+        <li><%= link_to "Calendar",'/calendar'%></li>
+        <li><%= link_to "Volunteer",'/volunteer'%></li>
+        <li><%= link_to "Donate",'/donate'%></li>
+      </ul>
+    </li>
+    <li><%= link_to "ABOUT US"%>
+      <ul>
+        <li><%= link_to "Founders Story ",'/founders_story'%></li>
+        <li><%= link_to "Contact Us",'/contact'%></li>
+      </ul>
+    </li> 
+  </div>
+  </ul> <!--/.nav -->
+</nav>
